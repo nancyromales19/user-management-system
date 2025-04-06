@@ -1,5 +1,5 @@
 # I. Introduction
-User Management System implemented features like email sign-up, verification, authentication, role-based authorization, and CRUD operations.
+A full-stack application for managing user accounts with features like email sign-up, verification, authentication, role-based authorization, and CRUD operations.
 
 FEATURES : 
 
@@ -24,3 +24,13 @@ FEATURES :
  1. You need to ensure that you have downloaded Node.js, MYSQL and Angular(v17).
  2. Clone this repository -> git clone https://github.com/nancyromales19/user-management-system.git
  3. Install the dependencies needed. -> npm install
+ 4. Run npm start to start the backend server.
+ 5. Run ng serve to start the angular app.
+
+# III. Usage
+
+# IV. Testing
+
+# V. Contributing
+
+# VI. License
