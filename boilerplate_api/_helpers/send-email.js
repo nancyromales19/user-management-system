@@ -5,15 +5,16 @@ module.exports = sendEmail;
 
 
 async function sendEmail({ to, subject, html, from = config.emailFrom }) {
-    const transporter = nodemailer.createTransport(config.smtpOptions);
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.ethereal.email',
+        port: 587,
+        auth: {
+            user: 'charlene17@ethereal.email',
+            pass: 'B2wq9VN7cvuRrbh7ed'
+        }
+    });
     await transporter.sendMail({ from, to, subject, html});
 }
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
-    auth: {
-        user: 'charlene17@ethereal.email',
-        pass: 'B2wq9VN7cvuRrbh7ed'
-    }
-});
+
+
