@@ -11,6 +11,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@angular/core": "^19.2.5",
+    "@angular/router": "^19.2.5",
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cookie-parser": "^1.4.7",
@@ -23,6 +25,7 @@
     "mysql2": "^3.14.0",
     "nodemailer": "^6.10.0",
     "rootpath": "^0.1.2",
+    "rxjs": "^7.8.2",
     "sequelize": "^6.37.7",
     "swagger-ui-express": "^5.0.1",
     "yamljs": "^0.3.0"
