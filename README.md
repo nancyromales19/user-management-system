@@ -1,6 +1,5 @@
 # I. Introduction
-Briefly describe the purpose of the project and its features.
-User Management System will help students prepare for their individual examinations by implementing features like email sign-up, verification, authentication, role-based authorization, and CRUD operations.
+User Management System implemented features like email sign-up, verification, authentication, role-based authorization, and CRUD operations.
 
 FEATURES : 
 
