@@ -11,6 +11,11 @@ export class AuthGuard {
     ) { }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+        // Bypass authentication for admin routes
+        if (state.url.startsWith('/admin')) {
+            return true;
+        }
+
         const account = this.accountService.accountValue;
         if (account) {
             // check if route is restricted by role

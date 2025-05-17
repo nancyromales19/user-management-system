@@ -7,7 +7,7 @@ import { AlertService } from '@app/_services';
 import { Role } from '@app/_models';
 
 // array in local storage for accounts
-const accountsKey = 'angular-10-signup-verification-boilerplate-accountss';
+const accountsKey = 'angular-10-signup-verification-boilerplate-accounts';
 let accounts = JSON.parse(localStorage.getItem(accountsKey)) || [];
 
 // array in local storage for requests
@@ -106,7 +106,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
         function authenticate() {
             const { email, password } = body;
-            const account = accounts.find(x => x.email === email && x.password === password && x.isVerified);
+            const account = accounts.find(x => x.email === email && x.password === password );
         
             if (!account) return error('Email or password is incorrect');
             if (!account.isActive) return error('Account is deactivated');
@@ -218,7 +218,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             }
             account.dateCreated = new Date().toISOString();
             account.verificationToken = new Date().getTime().toString();
-            account.isVerified = false;
+            account.isVerified = true;
             account.isActive = true; // New property added to ensure account is active by default
             account.refreshTokens = [];
             delete account.confirmPassword;

@@ -6,14 +6,108 @@ a { cursor: pointer; }
 }
 
 .admin-nav {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #e8e9ea;
-    border-bottom: 1px solid #ccc;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px 0 rgba(34,34,59,0.07);
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .nav-link {
+        color: #222 !important;
+        font-weight: 500;
+        font-size: 1.08rem;
+        padding: 0.5rem 1.1rem;
+        border-radius: 0.5rem;
+        background: none;
+        transition: background 0.2s, color 0.2s;
+        &.active {
+            color: #fff !important;
+            background: #2563eb !important;
+            font-weight: 700;
+        }
+        &:hover {
+            color: #2563eb !important;
+            background: #e0e7ff !important;
+        }
+    }
 }
 
 .btn-delete-account {
     width: 40px;
     text-align: center;
     box-sizing: content-box;
+}
+
+.custom-modal .modal-dialog {
+    max-width: 420px;
+    margin: 2.5rem auto;
+}
+
+.custom-modal .modal-content {
+    border-radius: 1.1rem;
+    box-shadow: 0 8px 32px 0 rgba(34,34,59,0.15);
+    border: none;
+    background: #fff;
+    padding: 0.5rem 0 0 0;
+}
+
+.custom-modal .modal-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.25rem 1.5rem 1rem 1.5rem;
+}
+
+.custom-modal .modal-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.custom-modal .modal-body {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 0 0 1.1rem 1.1rem;
+}
+
+.custom-modal .modal-footer {
+    border-top: none;
+    padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+    background: #f8fafc;
+    border-radius: 0 0 1.1rem 1.1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.custom-modal .btn-close {
+    filter: invert(0.5);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.custom-modal .btn-close:hover {
+    opacity: 1;
+}
+
+.custom-modal .form-select,
+.custom-modal .form-label {
+    font-size: 1.05rem;
+}
+
+.custom-modal .form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+    padding: 0.5rem 1rem;
+}
+
+.custom-modal .btn-primary {
+    background: #2563eb;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.3rem;
+}
+
+.custom-modal .btn-outline-secondary {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.3rem;
 }
