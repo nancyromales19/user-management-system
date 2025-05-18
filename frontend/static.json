@@ -1,5 +1,5 @@
 {
-  "root": "dist/user-management-system/browser",
+  "root": "dist",
   "routes": {
     "/**": "index.html"
   }
