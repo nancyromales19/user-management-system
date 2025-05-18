@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: ''
+    apiUrl: 'https://loayon-user-management-system.onrender.com'
   };
   
