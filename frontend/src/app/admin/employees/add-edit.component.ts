@@ -42,7 +42,10 @@ export class AddEditComponent implements OnInit {
             status: ['']
         });
 
-        this.accountService.getAll().subscribe(accounts => this.accounts = accounts);
+        // Only get active accounts
+        this.accountService.getAll().subscribe(accounts => {
+            this.accounts = accounts.filter(acc => acc.isActive);
+        });
         this.departmentService.getAll().subscribe(departments => this.departments = departments);
 
         if (!this.isAddMode) {
