@@ -1,5 +1,5 @@
 buildCommand: npm install && npm run build -- --configuration production
-publish: frontend/dist/angular-signup-verification-boilerplate/browser
+publish: dist/angular-signup-verification-boilerplate/browser
 routes:
   - type: rewrite
     source: /.*
