@@ -4,7 +4,7 @@
 
 export const environment = {
     production: false,
-    apiUrl: 'https://final-intprog-1dw5.onrender.com'
+    apiUrl: 'https://loayon-user-management-system.onrender.com'
   };
   
   /*
