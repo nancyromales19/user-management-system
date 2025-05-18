@@ -1,5 +1,5 @@
 {
-  "root": "dist/angular-signup-verification-boilerplate",
+  "root": "dist/angular-signup-verification-boilerplate/browser",
   "routes": {
     "/**": "index.html"
   }
